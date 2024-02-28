@@ -29,9 +29,14 @@
   ```
   sudo docker build -t mariadb . -f Dockerfile
   sudo docker run --name mariadb -p 3306:3306 -d mariadb
+
+  ### mysql 내 접속 후 create database
+  sudo docker exec -it mariadb bash 이후
+
+  create database todo_db;
    ```
 
-3. compose
+3. compose -  (~/code/devops 내에 docker-compose.yml 작성)
 - docker-compose.yml 작성
    ```
   version: '3.8'
