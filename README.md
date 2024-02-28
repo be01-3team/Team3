@@ -1,5 +1,5 @@
 ## app & db 서버
-1. app
+1. app - (~/code/devops 기준)
 - Maven build로 jar 만들기 (Goals에 "package" 작성. 쌍따옴표 적지 않음)
 - jar파일 wsl 내 폴더에 옮기기
 - Dockerfile 작성
@@ -15,7 +15,7 @@
   sudo docker run -d --name todolist -p 8080:8080 todolist
    ```
 
-2. db
+2. db - (~/code/mariadb 기준)
 - Dockerfile 작성
   ```
   # mariadb 10.11.5
